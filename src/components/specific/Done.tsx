@@ -1,4 +1,3 @@
-import React from 'react'
 import ListLayout from '../shared/ListLayout'
 import { useSelector } from 'react-redux';
 import { RootState } from '@/redux/store';

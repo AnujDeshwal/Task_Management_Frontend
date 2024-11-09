@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import type { RootState } from "../../redux/store";
@@ -88,6 +88,7 @@ const TaskCards = () => {
 
   return (
     <>
+    {Exp===0 && Comp == 0 && Act == 0}
       <CardElem
         icon={<HourglassEmptyIcon className="text-white " />}
         title={"Expired Tasks"}

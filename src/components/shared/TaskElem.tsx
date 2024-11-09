@@ -36,7 +36,7 @@ type PropType = {
 };
 
 // Define the class mappings with explicit types
-const levelClasses = {
+const levelClasses:{low:string;high:string;completed:string;expired:string} = {
   low: "bg-orange-500/20 text-orange-600 hover:bg-orange-500/30",
   high: "bg-red-500/20 text-red-600 hover:bg-red-500/30",
   completed: "bg-green-500/20 text-green-600 hover:bg-green-500/30",
@@ -57,7 +57,7 @@ const TaskElem: React.FC<PropType> = ({
   const [priority, setPriority] = useState<string>("");
   const [dueDate, setDueDate] = useState<string>("");
   const [status, setStatus] = useState<string>("todo");
-  let temp:string;
+  let temp:"low"|"high"|"completed"|"expired";
   const currentDate = new Date();
   if (new Date(deadline) < currentDate)temp = 'expired';
   else if(_status === 'completed' )temp=_status;

@@ -1,4 +1,3 @@
-import React from 'react'
 import ListLayout from '../shared/ListLayout'
 import { RootState } from '@/redux/store';
 import { TaskType } from '@/redux/reducers/task.reducer';
