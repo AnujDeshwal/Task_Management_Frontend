@@ -26,7 +26,14 @@ Built with the reactJs and typscript .
 - Category Slider (for mobile and tab devices), which switch between various catogories.
 - All CRUD operations can be performed with the tasks . 
 
+## Server Variable 
+Make sure to change the server variable to your server url, so that all the api's call will be forwarded to that server url only .Server variable resides here -> 
+ ```
+ - __constants__
+       - [server.ts](src/constants/server.ts)
 
+
+ ```
 
 ## Quick Start
 Follow these steps to set up the project locally on your machine.
