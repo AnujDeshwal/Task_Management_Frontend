@@ -4,12 +4,20 @@
 Built with the reactJs and typscript .
 ## Live Demo
 - Link to the video of full demonstration:https://www.loom.com/share/467bc40842d94638a21ab678f28ed11e
+
+
 **Deployed Links**
 - frontend :  https://task-management-frontend-gules-five.vercel.app/
 - backend : https://task-management-backend-q9ie.onrender.com
+
+
+
 **Github links**
 - frontend : https://github.com/AnujDeshwal/Task_Management_Frontend
 - backend : https://github.com/AnujDeshwal/Task_Management_Backend
+
+
+
 ## (FRONTEND) Tech Stack
 
 - ReactJS
