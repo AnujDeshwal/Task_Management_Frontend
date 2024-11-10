@@ -1,50 +1,101 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Task Mangement app (Mern Stack)
 
-Currently, two official plugins are available:
+Built with the reactJs and typscript .
+## Live Demo
+- Link to the video of full demonstration:https://www.loom.com/share/467bc40842d94638a21ab678f28ed11e
+**Deployed Links**
+- frontend :  https://task-management-frontend-gules-five.vercel.app/
+- backend : https://task-management-backend-q9ie.onrender.com
+**Github links**
+- frontend : https://github.com/AnujDeshwal/Task_Management_Frontend
+- backend : https://github.com/AnujDeshwal/Task_Management_Backend
+## (FRONTEND) Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ReactJS
+- TypeScript
+- Shadcn
+- Tailwind CSS
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Fully stylish task list wih complete responsiveness
+
+- Category Slider (for mobile and tab devices), which switch between various catogories.
+- All CRUD operations can be performed with the tasks . 
+
+
+
+## Quick Start
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- Git
+- Node.js
+- npm (Node Package Manager)
+**Cloning the Repository**
+
+```
+git clone https://github.com/AnujDeshwal/Task_Management_Frontend.git
+cd Task_Management_Frontend
+```
+**Installation of project dependencies**
+
+```
+npm install
+```
+**Running the project**
+
+```
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Files Structure
 ```
+
+
+   - [index.html](index.html)
+   - __src__
+     - [App.css]
+     - [App.tsx]
+     - __components__
+       - __layout__
+         - [Header.tsx](src/components/layout/Header.tsx)
+         - [Slider.tsx](src/components/layout/Slider.tsx)
+         - [TaskCards.tsx](src/components/layout/TaskCards.tsx)
+       - __shared__
+         - [CardElem.tsx](src/components/shared/CardElem.tsx)
+         - [ListLayout.tsx](src/components/shared/ListLayout.tsx)
+         - [SearchBox.tsx](src/components/shared/SearchBox.tsx)
+         - [TaskElem.tsx](src/components/shared/TaskElem.tsx)
+         - [filter\-button\-dropdown.tsx](src/components/shared/filter-button-dropdown.tsx)
+       - __specific__
+         - [Done.tsx](src/components/specific/Done.tsx)
+         - [OnProgress.tsx](src/components/specific/OnProgress.tsx)
+         - [Todo.tsx](src/components/specific/Todo.tsx)
+       - __ui__
+         - [button.tsx](src/components/ui/button.tsx)
+         - [dialog.tsx](src/components/ui/dialog.tsx)
+         - [dropdown\-menu.tsx](src/components/ui/dropdown-menu.tsx)
+         - [input.tsx](src/components/ui/input.tsx)
+         - [label.tsx](src/components/ui/label.tsx)
+         - [select.tsx](src/components/ui/select.tsx)
+         - [textarea.tsx](src/components/ui/textarea.tsx)
+     - __constants__
+       - [server.ts](src/constants/server.ts)
+     - [index.css](src/index.css)
+     - __lib__
+       - [utils.ts](src/lib/utils.ts)
+     - [main.tsx](src/main.tsx)
+     - __redux__
+       - __reducers__
+         - [card.reducer.ts](src/redux/reducers/card.reducer.ts)
+         - [task.reducer.ts](src/redux/reducers/task.reducer.ts)
+       - [store.ts](src/redux/store.ts)
+
+   ```
